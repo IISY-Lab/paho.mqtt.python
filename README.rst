@@ -1,3 +1,15 @@
+Note on this fork
+=================
+
+This fork is a modified version of the official eclipse implementation.
+
+Essentialy, the `client.py` was changed to suit a project specific setup and be able to receive messages >4kb in a WebSocket setting.
+
+Be aware that if you plan to use this fork you will maybe run into naming problems.
+This fork uses the same import naming conventions as the official version.
+
+Original REAMDE below:
+
 Eclipse Paho™ MQTT Python Client
 ================================
 

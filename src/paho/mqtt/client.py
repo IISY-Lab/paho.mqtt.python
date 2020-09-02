@@ -3721,7 +3721,10 @@ class WebsocketWrapper(object):
             header1 = self._buffered_read(1)
             header2 = self._buffered_read(1)
 
-            opcode = (header1[0] & 0x0f)
+            #! modified line
+            # opcode = (header1[0] & 0x0f)
+            opcode = 2
+
             maskbit = (header2[0] & 0x80) == 0x80
             lengthbits = (header2[0] & 0x7f)
             payload_length = lengthbits
